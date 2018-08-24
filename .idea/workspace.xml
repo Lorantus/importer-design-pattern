@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="64e5d02e-7bdb-48fa-98b5-66606c226469" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ApplicatibiliteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ApplicatibiliteValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterReponsesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterReponsesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/validator/Validator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,38 +22,46 @@
     <session id="-1118271751">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="681" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="1462" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="Git file" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="681" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="1462" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="31" />
-          <entry key="java" value="4068" />
+          <entry key="dummy" value="77" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="10840" />
+          <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4068" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Git file" value="1" />
+          <entry key="JAVA" value="10840" />
+          <entry key="PLAIN_TEXT" value="131" />
         </counts>
       </usages-collector>
     </session>
@@ -59,13 +69,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionValidatorLigne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -75,6 +82,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -83,7 +91,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>QuestionReponse</find>
+      <find>Le nombre de réponses n'est pas égal au nombre</find>
+      <find>RowDataSource</find>
+      <find>Cette question</find>
+      <find>equals(</find>
+      <find>Cette question</find>
+      <find>onError(</find>
     </findStrings>
+    <replaceStrings>
+      <replace>DataSource</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,45 +108,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/CommandMananger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NoCheckReponseCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/UpdateCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeNumericCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/api/UpdateCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/CommentaireCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommandImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/api/ImportCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/api/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/CommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportCommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterCommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/api/CommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportQuestionErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportQuestionsErrorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQCMValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ChoixLibelleComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQCUValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/LecteurImport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeNumericValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImportQuestionCommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/typeQuestion/TypeQuestionValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/ImportContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/CommandProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NonApplicableCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NonConcerneCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeNumericValidatorCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/QuestionComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterQuestions.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Reponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportReponsesCollector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ReponseValideeCollector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/model/TypeQuestion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/DataSourcej.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/RowDataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/LecteurImportReponses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/LecteurImport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/ImporterReponses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/model/ReponseValidee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/model/QuestionReponseImport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/QuestionExistValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/LibelleQuestionFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/QuestionLibelleComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Choix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Questionnaire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ReponseToApply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ErrorMesage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportErrors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/error/ImportErrors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportFichierErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/NonConcerneComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/IgnoreCaseComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/QuestionLibelleComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionAChoixValidatorLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/ChoixLibelleComparator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/laurent/importer/ImporterReponsesServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQuestionAChoixValidatorLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportLigneErrorMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCUValidatorLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCMValidatorLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionValidatorLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/error/ImportError.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ReponseValideeLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/api/validator/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportFichierValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/validator/ImportLigneValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/validator/ImportFichierValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ApplicatibiliteValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterReponsesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/NoCheckReponseLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterLigne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeNumericValidatorLigne.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="51" />
@@ -195,6 +232,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,76 +270,34 @@
               <item name="importer" type="b2602c69:ProjectViewProjectNode" />
               <item name="importer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="importer" type="b2602c69:ProjectViewProjectNode" />
               <item name="importer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="importer" type="b2602c69:ProjectViewProjectNode" />
               <item name="importer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="importer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="importer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="compoments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="importer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="importer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="importer" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="add_unversioned_files" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -309,13 +305,24 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.laurent.importer.compoments" />
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="com.laurent.importer" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.laurent.importer" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.laurent.importer.validator" />
       <recent name="com.laurent.importer.command" />
-      <recent name="com.laurent.importer.command.api" />
+      <recent name="com.laurent.importer.comparator" />
+      <recent name="com.laurent.importer.error" />
+      <recent name="com.laurent.importer" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.laurent.importer.error" />
       <recent name="com.laurent.importer.command" />
     </key>
   </component>
@@ -330,6 +337,102 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ImporterReponsesServiceTest">
+    <configuration name="ImporterReponsesServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laurent.importer.command.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laurent.importer" />
+      <option name="MAIN_CLASS_NAME" value="com.laurent.importer.ImporterReponsesServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiDeuxReponsesDifferentes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laurent.importer.command.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laurent.importer" />
+      <option name="MAIN_CLASS_NAME" value="com.laurent.importer.ImporterReponsesServiceTest" />
+      <option name="METHOD_NAME" value="doitDeclencherUneExceptionSiDeuxReponsesDifferentes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laurent.importer.command.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laurent.importer" />
+      <option name="MAIN_CLASS_NAME" value="com.laurent.importer.ImporterReponsesServiceTest" />
+      <option name="METHOD_NAME" value="doitDeclencherUneExceptionSiLaReponseNEstPasValidee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImporterReponsesServiceTest.doitDelancherUenExceptionSiDeuxReponsesDifferentes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laurent.importer.command.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laurent.importer" />
+      <option name="MAIN_CLASS_NAME" value="com.laurent.importer.ImporterReponsesServiceTest" />
+      <option name="METHOD_NAME" value="doitDelancherUenExceptionSiDeuxReponsesDifferentes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImporterReponsesServiceTest.doitImporterLesReponses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.laurent.importer.command.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.laurent.importer" />
+      <option name="MAIN_CLASS_NAME" value="com.laurent.importer.ImporterReponsesServiceTest" />
+      <option name="METHOD_NAME" value="doitImporterLesReponses" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ImporterReponsesServiceTest" />
+      <item itemvalue="JUnit.ImporterReponsesServiceTest.doitImporterLesReponses" />
+      <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDelancherUenExceptionSiDeuxReponsesDifferentes" />
+      <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDeclencherUneExceptionSiDeuxReponsesDifferentes" />
+      <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ImporterReponsesServiceTest" />
+        <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" />
+        <item itemvalue="JUnit.ImporterReponsesServiceTest.doitImporterLesReponses" />
+        <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDeclencherUneExceptionSiDeuxReponsesDifferentes" />
+        <item itemvalue="JUnit.ImporterReponsesServiceTest.doitDelancherUenExceptionSiDeuxReponsesDifferentes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -374,24 +477,91 @@
       <option name="project" value="LOCAL" />
       <updated>1534691774562</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Retire de Git les fichiers inutiles">
+      <created>1535174822047</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535174822047</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Retire de Git les fichiers inutiles">
+      <created>1535181862625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535181862625</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Retire de Git les fichiers inutiles">
+      <created>1535212307770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1535212307770</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Restructuration pour ne plus utliser de Command mais un Validator">
+      <created>1535269995906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535269995907</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Restructuration pour ne plus utliser de Command mais un Validator">
+      <created>1535302014027</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1535302014027</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ImporterReponsesServiceTest_doitDeclencherUneExceptionSiLaReponseNEstPasValidee - 2018.08.26 at 18h 32m 14s.xml">
+      <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest_doitDeclencherUneExceptionSiLaReponseNEstPasValidee - 2018.08.26 at 18h 33m 24s.xml">
+      <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest - 2018.08.26 at 18h 33m 34s.xml">
+      <configuration name="ImporterReponsesServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest - 2018.08.26 at 18h 39m 56s.xml">
+      <configuration name="ImporterReponsesServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest_doitDeclencherUneExceptionSiLaReponseNEstPasValidee - 2018.08.26 at 18h 40m 53s.xml">
+      <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest_doitDeclencherUneExceptionSiLaReponseNEstPasValidee - 2018.08.26 at 18h 41m 25s.xml">
+      <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest_doitDeclencherUneExceptionSiLaReponseNEstPasValidee - 2018.08.26 at 18h 42m 01s.xml">
+      <configuration name="ImporterReponsesServiceTest.doitDeclencherUneExceptionSiLaReponseNEstPasValidee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest - 2018.08.26 at 18h 43m 26s.xml">
+      <configuration name="ImporterReponsesServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest - 2018.08.26 at 18h 49m 30s.xml">
+      <configuration name="ImporterReponsesServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImporterReponsesServiceTest - 2018.09.01 at 09h 40m 35s.xml">
+      <configuration name="ImporterReponsesServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1869" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25233132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19857378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3416216" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36216217" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49972573" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49972573" weight="0.32972974" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32972974" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002743" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32972974" />
@@ -399,7 +569,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32967636" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,322 +603,369 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version du début" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version du début" />
+    <MESSAGE value="Retire de Git les fichiers inutiles" />
+    <MESSAGE value="Restructuration pour ne plus utliser de Command mais un Validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructuration pour ne plus utliser de Command mais un Validator" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>!s.isEmpty()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>choix.get(new IgnoreCaseComparator(libelle))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>questionnaire.getReponse(reponseValidee.getQuestion())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/main.iml" />
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Function.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterQuestions.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NonApplicableCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommand.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="4801" column="30" selection-start-line="4801" selection-start-column="30" selection-end-line="4801" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/findQuestionCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommandImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/api/ImportCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportCommandProcessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/validator/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterCommandProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportQuestionsErrorMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="1141" column="19" selection-start-line="1141" selection-start-column="19" selection-end-line="1141" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/ChoixLibelleComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/QuestionReponsesValides.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/CommentaireCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportReponsesCollector.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ReponseValideeCollector.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImportQuestionErrorMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/RowDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/CommandProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/ImporterReponses.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/UpdateCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/Command.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/ReponseValidee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/TypeQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/LecteurImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/QuestionReponseImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/QuestionExistValidator.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="356" column="13" selection-start-line="356" selection-start-column="13" selection-end-line="356" selection-end-column="13" />
+          <folding>
+            <element signature="e#12617#12618#0" expanded="true" />
+            <element signature="e#12678#12679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="1127" column="16" selection-start-line="1127" selection-start-column="16" selection-end-line="1127" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Questionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Reponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ReponseToApply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/error/ErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/LecteurImportReponses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/QuestionReponseValide.java">
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="202">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding>
+            <element signature="e#5877#5878#0" expanded="true" />
+            <element signature="e#5913#5914#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/TypeQuestion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/NonConcerneComparator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/LibelleQuestionFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/model/QuestionReponseImport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="414">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/Choix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/domain/QuestionReponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/IgnoreCaseComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/ChoixLibelleComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.10.0/assertj-core-3.10.0.jar!/org/assertj/core/api/AssertionsForClassTypes.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/laurent/importer/ImporterReponsesServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/error/ImportError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/LecteurImport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportLigneErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/UpdateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCUValidatorCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImportQuestionCommandProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/comparator/QuestionLibelleComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/NoCheckReponseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/command/CommandProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#1372#1373#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NonConcerneCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/CommentaireCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionValidatorCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeNumericValidatorCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCMValidatorCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/QuestionComparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/error/ImportFichierErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="62" />
           <folding>
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/compoments/ImportContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/validator/ImportLigneValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/validator/ImportValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterQuestions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/api/validator/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="306">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/NonApplicableCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ApplicatibiliteValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterQuestionsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="683">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1517#1554#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/ImporterReponsesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2700#2741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/NoCheckReponseLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeNumericValidatorLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#798#820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCMValidatorLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQCUValidatorLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#615#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/question/TypeQuestionAChoixValidatorLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ImporterLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/ReponseValideeLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laurent/importer/command/TypeQuestionValidatorLigne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
