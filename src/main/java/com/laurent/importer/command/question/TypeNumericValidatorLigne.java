@@ -21,6 +21,6 @@ public class TypeNumericValidatorLigne extends ImporterLigne {
                 .onError(errorConsumer)
                 .validate(
                         this::isNumeric,
-                        () -> createMessage(ligneImport, "Cette question nécessite un entier en réponse"));
+                        () -> createMessage(ligneImport, "Cette question nécessite un entier en réponse."));
     }
 }
