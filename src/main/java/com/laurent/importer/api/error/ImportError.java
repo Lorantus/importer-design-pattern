@@ -19,10 +19,6 @@ public class ImportError implements ErrorMessage {
         errorMessages.add(error);
     }
 
-    protected void addAll(List<ErrorMessage> error) {
-        errorMessages.addAll(error);
-    }
-
     @Override
     public String getErrorMessage() {
         return errorMessages.stream()
